@@ -1,0 +1,11 @@
+# Pocket Retro — default settings for the LilyGO T-Display C5.
+# (ESP-IDF reads this file automatically on the first build.)
+#
+# The board's chip:
+CONFIG_IDF_TARGET="esp32c5"
+# The board's flash chip is 16 MB. The build uses DIO flash mode
+# (the ESP32-C5 build resolves the mode to DIO).
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESPTOOLPY_FLASHMODE_DIO=y
+# One big app, no over-the-air updates — simplest layout for a game:
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
